@@ -1,4 +1,4 @@
-# 🧩 afnd-para-afd-conversor
+# Conversor de AFND para AFD
 
 ## 📁 Organização do Repositório
 
@@ -12,8 +12,9 @@
 ```
 
 ---
+[Instruções para realização do trabalho](https://github.com/user-attachments/files/22961208/Trabalho_1B.pdf)
 
-## Como Rodar
+## Como executar
 
 ### 1️⃣ Gerar AFD a partir do AFND (Parte 1)
 
@@ -21,7 +22,7 @@
 python3 src/parte1.py
 ```
 
-> 💡 Gera o arquivo: `out/afd_saida.txt`
+> Gera o arquivo: `out/afd_saida.txt`
 
 ---
 
@@ -31,18 +32,18 @@ python3 src/parte1.py
 python3 src/parte2.py
 ```
 
-> 💡 Gera os arquivos:
+> Gera os arquivos:
 >
 > * `out/afd_saida.txt`
 > * `out/resultado_palavras.txt`
 
 ---
 
-## ⚙️ Observações
+## Observações
 * Os scripts utilizam **caminhos relativos**, então devem ser executados **a partir do diretório raiz** do projeto.
 ---
 
-## 📚 Parte 1: Conversão de AFND → AFD
+## Parte 1: Conversão de AFND → AFD
 
 ### Objetivo
 
@@ -53,7 +54,7 @@ Converter um **AFND (com movimentos vazios)** em um **AFD**.
 
 ---
 
-### 🗂️ Formato do Arquivo de Entrada
+### Formato do Arquivo de Entrada
 
 | Linha | Descrição                                                | Exemplo           |
 | :---- | :------------------------------------------------------- | :---------------- |
@@ -62,17 +63,17 @@ Converter um **AFND (com movimentos vazios)** em um **AFD**.
 | 2     | Estados finais separados por espaço                      | `E F`             |
 | 3+    | Transições: estado atual, caractere lido, próximo estado | `A 0 B` / `A h C` |
 
-> ℹ️ A **transição vazia** deve ser representada por **`h`**.
+> A **transição vazia** deve ser representada por **`h`**.
 
 ---
 
-### 📄 Exemplo de Arquivo de Entrada
+### Exemplo do arquivo de entrada utilizado
 
 <img width="351" height="324" alt="image" src="https://github.com/user-attachments/assets/d1898f70-39ae-4029-ab3e-e2de305f47ff" />
 
 ---
 
-## 🎯 Resultado Esperado
+## Resultado Esperado
 
 ### 📤 Saída
 
@@ -82,7 +83,7 @@ Um arquivo `.txt` (mesmo formato do de entrada) contendo a **tabela do AFD**.
 
 ---
 
-## 📊 Visualização dos Autômatos
+## Visualização dos Autômatos pelo GraphViz
 
 ### 🔹 AFND
 
@@ -94,7 +95,7 @@ Um arquivo `.txt` (mesmo formato do de entrada) contendo a **tabela do AFD**.
 
 ---
 
-## 🧮 Visualização no JFLAP
+## Visualização no JFLAP
 
 ### 🔸 AFND
 
