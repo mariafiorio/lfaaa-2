@@ -1,0 +1,27 @@
+
+
+digraph AFND {
+    rankdir=LR;
+    node [shape=circle, fontname="Helvetica"];
+    edge [fontname="Helvetica"];
+
+    init [shape=point, label=""];
+    init -> A;
+
+    E [shape=doublecircle];
+
+    A -> C [label="h"];
+    A -> B [label="1"];
+    A -> G [label="h"];
+    B -> B [label="1"];
+    B -> F [label="0"];
+    C -> D [label="0"];
+    D -> D [label="1"];
+    D -> E [label="0"];
+    D -> H [label="0"];
+    F -> G [label="h"];
+    G -> H [label="1"];
+    H -> H [label="0"];
+    H -> E [label="1"];
+}
+
