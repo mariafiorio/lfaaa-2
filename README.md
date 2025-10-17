@@ -1,6 +1,6 @@
 # Conversor de AFND para AFD
 
-## 📁 Organização do Repositório
+## Organização do Repositório
 
 ### Estrutura de Pastas
 
